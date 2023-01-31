@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_print, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, avoid_print, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 
@@ -48,16 +48,22 @@ class Home extends StatelessWidget {
                   print('menu');
                 }),
             IconButton(
-                icon: Icon(Icons.menu),
+                icon: Icon(Icons.email),
+                tooltip: 'mailto',
                 onPressed: () {
                   print('menu');
                 }),
           ],
         ),
         body: Center(
-          child: Text(
-            'Hello World',
-            style: TextStyle(fontSize: 25.0),
+          child: Container(
+            width: 300.0,
+            height: 260.0,
+            decoration: BoxDecoration(
+                border: Border.all(
+              width: 2.0,
+            )),
+            
           ),
         ));
   }
